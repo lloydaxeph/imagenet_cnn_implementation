@@ -1,10 +1,6 @@
 import argparse
 import torch
-import torch.nn as nn
-from torch import optim
 from torch.utils.data import DataLoader
-from tqdm.auto import tqdm
-from datetime import datetime
 
 import config
 from model import CustomCNNModel

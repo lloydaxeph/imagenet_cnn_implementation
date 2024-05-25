@@ -1,0 +1,8 @@
+Pillow==9.3.0
+torch==2.3.0+cu118
+torchaudio==2.3.0
+torchdata==0.7.1
+torchtext==0.18.0
+torchvision==0.18.0
+tqdm==4.66.1
+
