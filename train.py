@@ -59,11 +59,11 @@ def run():
     train_loader, val_loader = create_dataloaders()
     optimizer = optim.Adam(model.parameters(), lr=config.learning_rate)
     criterion = nn.CrossEntropyLoss(label_smoothing=config.loss_label_smoothing).to(config.device)
+    current_datetime_str = datetime.now().strftime('%Y%m%d_%H%M%S')
     for epoch in range(config.epochs):
         run_epoch(model=model, train_loader=train_loader, val_loader=val_loader, epoch=epoch, optimizer=optimizer,
                   criterion=criterion)
-        current_datetime_str = datetime.now().strftime('%Y%m%d_%H%M%S')
-        torch.save(model.state_dict(), f'model_{current_datetime_str}.pt')
+        torch.save(model.state_dict(), f'model_{current_datetime_str}_epoch{epoch}.pt')
 
 
 if __name__ == '__main__':
