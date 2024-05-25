@@ -6,7 +6,7 @@ A simple implementation of the paper [ImageNet Classification with Deep Convolut
 ### 1.1 Model Architecture
 ![image](https://github.com/lloydaxeph/imagenet_cnn_implementation/assets/158691653/99685cc8-586c-47a0-9ade-1673847fff88)
 
-## 2.0 Getting Started
+## 2.0 Sample Implementation
 ### 2.1 Installation
 Install the required packages
 ```
