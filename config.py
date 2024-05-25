@@ -2,10 +2,12 @@ import torch
 from torchvision import transforms
 
 # Training Configs -----------------------------------------------------------------------------------------------------
-epochs = 3
+epochs = 100
 batch_size = 64
 learning_rate = 0.001
-imagenet_data_dir = r'mini-imagenet\ImageNet-Mini'
+imagenet_data_dir_train = r'mini-imagenet\ImageNet-Mini'
+imagenet_data_dir_test = r'mini-imagenet\ImageNet-Mini'
+val_split_percent = 0.2
 
 shuffle = True  # DataLoader.shuffle
 num_workers = 4  # DataLoader.num_workers
